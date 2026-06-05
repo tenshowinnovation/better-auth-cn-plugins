@@ -1,0 +1,57 @@
+{
+	"name": "@tenshowinnovation/better-auth-cn-plugins",
+	"version": "0.1.0",
+	"description": "Better Auth OAuth provider helpers for WeChat and Douyin.",
+	"keywords": [
+		"better-auth",
+		"china",
+		"douyin",
+		"oauth",
+		"wechat"
+	],
+	"license": "MIT",
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"type": "module",
+	"sideEffects": false,
+	"main": "./dist/index.mjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.mts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.mts",
+			"import": "./dist/index.mjs"
+		},
+		"./wechat": {
+			"types": "./dist/wechat.d.mts",
+			"import": "./dist/wechat.mjs"
+		},
+		"./douyin": {
+			"types": "./dist/douyin.d.mts",
+			"import": "./dist/douyin.mjs"
+		},
+		"./package.json": "./package.json"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsdown",
+		"typecheck": "tsc --noEmit -p tsconfig.json"
+	},
+	"devDependencies": {
+		"@types/node": "catalog:",
+		"better-auth": "catalog:",
+		"tsdown": "catalog:",
+		"typescript": "catalog:"
+	},
+	"peerDependencies": {
+		"better-auth": ">=1.6.0 <2"
+	},
+	"engines": {
+		"node": ">=18.18.0"
+	}
+}

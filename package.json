@@ -1,0 +1,24 @@
+{
+	"name": "better-auth-cn-plugins-monorepo",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "pnpm --filter @tenshowinnovation/better-auth-cn-plugins build",
+		"format": "oxfmt .",
+		"format:check": "oxfmt --check .",
+		"lint": "oxlint",
+		"lint:fix": "oxlint --fix",
+		"typecheck": "pnpm --filter @tenshowinnovation/better-auth-cn-plugins typecheck",
+		"pack:dry-run": "pnpm -C packages/better-auth-cn-plugins pack --dry-run"
+	},
+	"devDependencies": {
+		"oxfmt": "catalog:",
+		"oxlint": "catalog:"
+	},
+	"engines": {
+		"node": ">=18.18.0",
+		"pnpm": ">=10.0.0"
+	},
+	"packageManager": "pnpm@10.33.2"
+}
