@@ -8,7 +8,7 @@ Better Auth OAuth provider helpers for WeChat and Douyin.
 pnpm add @tenshowinnovation/better-auth-cn-plugins
 ```
 
-This package expects `better-auth >=1.6.0 <2` to be installed by your app.
+This package expects `better-auth >=1.6.0` to be installed by your app.
 
 ## Usage
 
