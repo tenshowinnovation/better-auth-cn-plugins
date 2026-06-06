@@ -9,7 +9,15 @@
 		"oauth",
 		"wechat"
 	],
+	"homepage": "https://github.com/tenshowinnovation/better-auth-cn-plugins#readme",
+	"bugs": {
+		"url": "https://github.com/tenshowinnovation/better-auth-cn-plugins/issues"
+	},
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tenshowinnovation/better-auth-cn-plugins"
+	},
 	"files": [
 		"dist",
 		"README.md",
